@@ -19,7 +19,7 @@ export default function EditPost() {
       setLoading(true);
       const token = localStorage.getItem("token");
       try {
-        const response = await axios.get(`https://git-backend-ig6q.onrender.com/post/get/${id}`, {
+        const response = await axios.get(`https://git-backend-9cej.onrender.com/post/get/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
