@@ -1,0 +1,16 @@
+.loginform {
+  background-color: #f8f9fa; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  margin-bottom: 20px; 
+}
+.navbar-brand {
+  font-weight: bold; 
+}
+.nav-link {
+  margin-left: 15px; 
+}
+.likeimg{
+  width: 10%;
+}
