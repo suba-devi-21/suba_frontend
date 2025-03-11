@@ -17,7 +17,7 @@ export default function Mainpage() {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          "https://git-backend-ig6q.onrender.com/post/allPosts",
+          "https://git-backend-9cej.onrender.com/post/allPosts",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -37,7 +37,7 @@ export default function Mainpage() {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.patch(
-        `https://git-backend-ig6q.onrender.com/post/like/${postId}`,
+        `https://git-backend-9cej.onrender.com/post/like/${postId}`,
         {},
         {
           headers: {
@@ -72,7 +72,7 @@ export default function Mainpage() {
 
     try {
       
-      await axios.patch(`https://git-backend-ig6q.onrender.com/post/comment/${postId}`, comment, {
+      await axios.patch(`https://git-backend-9cej.onrender.com/post/comment/${postId}`, comment, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -81,7 +81,7 @@ export default function Mainpage() {
       
       
       const response = await axios.get(
-        "https://git-backend-ig6q.onrender.com/post/allPosts",
+        "https://git-backend-9cej.onrender.com/post/allPosts",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
