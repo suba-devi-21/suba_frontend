@@ -68,6 +68,7 @@ export default function Signin() {
                   setSubmitting(true);
                   axios
                     .post("https://git-backend-9cej.onrender.com/user/register", values)
+                    withCredentials: true
                     .then((res) => {
                       const result = res.data;
                       if (result.message === "User Registered Successfully") {
