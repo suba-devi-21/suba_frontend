@@ -52,7 +52,7 @@ export default function EditPost() {
       };
       
       const response = await axios.patch(
-        `https://git-backend-ig6q.onrender.com/post/editpost/${id}`,
+        `https://git-backend-9cej.onrender.com/post/editpost/${id}`,
         updatedPost,
         {
           headers: {
